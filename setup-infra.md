@@ -30,6 +30,12 @@ IAMFullAccess
 Attach this policy to your user as well
 
 ![Policies To Attach](https://github.com/jaiswaladi246/Microservice/blob/Infra-Steps/Policies.png)
+# Docker
+
+```bash
+apt  install docker.io -y
+chmod 666 /var/run/docker.sock
+```
 
 # AWSCLI
 
@@ -166,7 +172,7 @@ subjects:
   kind: ServiceAccount
   name: jenkins 
 ```
-### create sec
+### Secret
 ```yaml
 apiVersion: v1
 kind: Secret
